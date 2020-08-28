@@ -1,0 +1,308 @@
+body{
+	color: #333;
+	font-size: 14px;
+	background-color: #fff;
+	letter-spacing: 1px;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	position: absolute;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.slides-navigation {
+	z-index: 6;
+}
+
+/*.slides-navigation .prev,
+.slides-navigation .next{
+	width: 48px;
+	height: 48px;
+	background-size: cover;
+}*/
+
+.slides-navigation a.prev{
+	left: 20px;
+	width: 48px;
+	height: 48px;
+	background-size: cover;
+	background-image: url(../img/icons/prev.png);
+}
+
+.slides-navigation a.next{
+	width: 48px;
+	height: 48px;
+	right: 20px;
+	background-size: cover;
+	background-image: url(../img/icons/next.png);	
+}
+
+.titleMessage{
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+	/*height: 250px;*/
+	top: 50%;
+	margin-top: -125px;
+	text-align: center;
+}
+
+.titleMessage .heading p{
+	color: #fff;
+	font-weight: 100;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+.titleMessage .heading .main{
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.mainHeadingLetterStyling{
+	font-size: 150px;
+	font-style: italic;
+}
+
+.titleMessage .heading .sub{
+	font-size: 23px;
+}
+
+.section{
+	padding: 100px 0;
+}
+
+.aboutImage{
+	max-width: 100%; /*max width of the parent*/
+}
+
+#about h3{
+	font-style: italic;
+	font-size: 42px;
+	letter-spacing: initial;
+	font-family: noto sans;
+	font-weight: lighter;
+	color: #2c3e50;
+}
+.aboutSubsection{
+	position: relative;
+}
+
+.aboutSubsectionIcon{
+	position: absolute;
+	font-size: 45px;
+	left: 10px;
+	top: 5px;
+}
+
+.aboutSubsectionText{
+	margin-left: 100px;
+}
+.aboutSubsectionText h4{
+	font-variant: small-caps;
+	padding: 5px 0;
+}
+
+.aboutSectionMoreInfo{
+	padding-top: 10px;
+}
+
+
+.aboutSectionMotto{
+	font-weight: bold;
+}
+
+.skillsSection,
+.contactSection{
+	background-color: #3498db;
+	color: #fff;
+}
+
+.skill{
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 50px;
+	padding-bottom: 50px;
+}
+
+.chart{
+	position: relative;
+	width: 152px;
+	height: 152px;
+	display: inline-block;
+	margin-left: 25px;
+	text-align: center;
+}
+
+.chart canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.chart .percent{
+	color: #fff;
+	line-height: 152px;
+	display: inline-block;
+	font-size: 35px;
+}
+
+.chart .percent:after{
+	content: '%';
+}
+
+.squareItem{
+	margin-top: 30px;
+	position: relative;
+}
+
+.squareInnerContainer{
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #444;
+	border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+	content: '';
+	position: absolute;
+	top: 0px;
+	width: 30%;
+	border-top: 2px solid #444;
+}
+
+.squareInnerContainer:before{
+	left: 0px;
+}
+
+.squareInnerContainer:after{
+	right: 0px;
+}
+
+.squareContent h2{
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #3498db;	
+}
+
+.squareContent h3{
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.squareIcon{
+	position: absolute;
+	left: 50%;
+	top: -30px;
+	width: 40%;
+	height: 60px;
+	font-size: 45px;
+	margin-left: -20%;
+}
+
+.contactButton{
+	color: #fff;
+	padding: 15px 20px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+
+#emailHelp{
+	color: #fff;
+}
+
+#emailWarning,
+#nameWarning{
+	color: #bb5f21;
+	font-weight: bold;
+}
+
+.contactButton:hover{
+	text-decoration: none;
+	color: #3498db;
+	background-color: #fff;
+}
+
+.copyrightSection{
+	background-color: #000;
+	color: #fff;
+	padding: 30px 5px;
+}
+
+.copyrightSection p{
+	margin: 0;
+}
+
+#navigation{
+	background-color: #333;
+	padding: 20px 10px;
+	z-index: 100;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.1);
+	position: absolute;
+	top: 1px;
+}
+
+#readMore{
+	color: #3498db;
+	text-decoration-line: underline;
+}
+
+#hiddenText{
+	display: none;
+}
+
+.navbar-item{
+	font-variant: small-caps;
+	font-size: 17px;
+}
+
+
+#navigation li{
+	padding: 0 10px;
+}
+
+#navigation li a{
+	color: #fff;
+}
+
+.navbar-brand{
+	color: #fff;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+}
+
+.navbar-toggler-icon{
+	background: url(../img/icons/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation{
+	position: fixed;
+	top: 0;
+}
+
+.dropdown-active{
+	background-color: #3498db;
+	border-radius: 10px;
+}
+
+#contactUsEmail,
+#contactUsName {
+	width: 50%;
+	display: block; 
+	margin : 0 auto;
+	height: 50px;
+}
+	
